@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #000000;
+    color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao {
+    padding: 6px;
+    width: 593px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.principal {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around; 
+    width: 1138px; 
+    line-height: 32px;  
+}
+
+.titulo__pagina {
+    font-family: "Krona One", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 32px;
+}
+
+.destaque__titulo {
+    color: #22d4fd;
+}
+
+.botoes {
+    padding: 20px;
+    justify-content: space-around;
+    display: flex;
+    gap: 50px;
+   
+}
+
+.botao {
+    background-color: #22D4FD;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    border-radius: 16px;
+    padding: 15px;
+
+}
+
+.imagem {
+    width: 464px;
+    height: 532px;
+}
+
+.destaque__amarelo {
+    color: yellow;
+}
+
+.roda_pe {
+    padding-top: 30px; 
+    text-align: left;
+  }
