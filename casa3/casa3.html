@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TecService | Conserto de Micro‑ondas em 30 Minutos</title>
+
+  <!-- Tailwind CSS e fonte Inter -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#ED6B00',
+              dark: '#212121'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-brand-dark">
+
+  <!-- Header -->
+  <header class="bg-white border-b sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <a href="#" class="text-3xl font-bold tracking-tight">Casa do Micro<span class="text-brand-orange">ondas</span></a>
+      <nav id="mainNav" class="hidden md:flex space-x-8">
+        <a href="#destaques" class="font-semibold hover:text-brand-orange">Destaques</a>
+        <a href="#outros-servicos" class="font-semibold hover:text-brand-orange">Serviços</a>
+        <a href="#localizacao" class="font-semibold hover:text-brand-orange">Localização</a>
+        <a href="#agendar" class="font-semibold hover:text-brand-orange">Agendar</a>
+      </nav>
+      <button id="menuToggle" class="md:hidden text-2xl" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[60vh] bg-cover bg-center bg-hero-pattern">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative container mx-auto px-6 h-full flex flex-col justify-center items-start text-white">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">Conserto de Microondas <br>em até 30 minutos</h1>
+      <p class="text-lg md:text-xl mt-4 max-w-md">Técnicos especializados + peças originais + atendimento rápido em Curitiba.</p>
+      <a href="#agendar" class="mt-6 inline-block bg-brand-orange text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition transform hover:scale-105">Agendar Reparo</a>
+    </div>
+  </section>
+
+  <main class="space-y-16">
+
+    <!-- Destaques -->
+    <section id="destaques" class="py-16 bg-white">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <!-- Conserto em 30min -->
+        <div class="flex flex-col items-center">
+          <div class="h-16 w-16 bg-orange-100 text-brand-orange flex items-center justify-center rounded-full mb-4">
+            ⚡
+          </div>
+          <h3 class="text-xl font-bold mb-2">Conserto em 30 Minutos</h3>
+          <p class="text-gray-600">Avaliação e reparo rápido na hora, sem espera.</p>
+        </div>
+        <!-- Peças originais -->
+        <div class="flex flex-col items-center">
+          <div class="h-16 w-16 bg-orange-100 text-brand-orange flex items-center justify-center rounded-full mb-4">
+            🧩
+          </div>
+          <h3 class="text-xl font-bold mb-2">Peças Originais</h3>
+          <p class="text-gray-600">Mais de 2.000 componentes disponíveis imediatamente.</p>
+        </div>
+        <!-- Técnico especializado -->
+        <div class="flex flex-col items-center">
+          <div class="h-16 w-16 bg-orange-100 text-brand-orange flex items-center justify-center rounded-full mb-4">
+            🔧
+          </div>
+          <h3 class="text-xl font-bold mb-2">Técnico Especializado</h3>
+          <p class="text-gray-600">Profissionais qualificados e treinados.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+        <img src="https://placehold.co/800x600/e5e7eb/4b5563?text=Técnico" alt="Técnico" class="rounded-lg w-full md:w-1/2">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold mb-4">Simples e Rápido</h2>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="bg-brand-orange text-white rounded-full h-8 w-8 flex items-center justify-center mr-4">1</span>
+              <div>
+                <h4 class="font-bold">Agende Online</h4>
+                <p class="text-gray-600">Escolha data e horário.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-brand-orange text-white rounded-full h-8 w-8 flex items-center justify-center mr-4">2</span>
+              <div>
+                <h4 class="font-bold">Visita Técnica</h4>
+                <p class="text-gray-600">Diagnóstico no local.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-brand-orange text-white rounded-full h-8 w-8 flex items-center justify-center mr-4">3</span>
+              <div>
+                <h4 class="font-bold">Reparo Finalizado</h4>
+                <p class="text-gray-600">Peça original e garantia.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outros Serviços -->
+    <section id="outros-servicos" class="py-16 bg-white">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Reforma -->
+        <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+          <img src="https://placehold.co/600x400/e5e7eb/4b5563?text=Reforma" alt="Reforma de micro-ondas" class="h-48 w-full object-cover">
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg mb-2">Reforma de Micro‑ondas</h3>
+            <p class="text-gray-600 flex-grow text-sm">Recuperamos modelos com ferrugem, com durabilidade de até 30 anos.</p>
+          </div>
+        </div>
+        <!-- Novos e usados -->
+        <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+          <img src="https://placehold.co/600x400/e5e7eb/4b5563?text=Novos+e+Usados" alt="Micro-ondas novos e usados" class="h-48 w-full object-cover">
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg mb-2">Micro‑ondas Novos & Usados</h3>
+            <p class="text-gray-600 flex-grow text-sm">Modelos 110 V/220 V, parcelamento em até 6× sem juros.</p>
+          </div>
+        </div>
+        <!-- Acessórios -->
+        <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col">
+          <img src="https://placehold.co/600x400/e5e7eb/4b5563?text=Acessórios" alt="Acessórios micro-ondas" class="h-48 w-full object-cover">
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg mb-2">Peças e Acessórios</h3>
+            <p class="text-gray-600 flex-grow text-sm">Pratos giratórios, roldanas, cruzetas — informe marca e modelo para buscar aluguel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Localização -->
+    <section id="localizacao" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-10">Onde nos Encontrar</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="font-bold text-xl mb-2">Unidade Rebouças</h3>
+            <p>Av. Presidente Kennedy, 410 – Curitiba, PR</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="font-bold text-xl mb-2">Unidade Santa Felicidade</h3>
+            <p>Rua Saturnino Miranda, 84 – Curitiba, PR</p>
+          </div>
+        </div>
+        <p class="mt-6 text-gray-600">Seg–Sex: 08:30–17:30 (avaliação até 16:00)</p>
+        <p class="font-semibold mt-2">(41) 3332‑8000 • Opção 01 • Opção 02</p>
+      </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendar" class="py-16 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">Agende seu Conserto</h2>
+        <p class="text-gray-600 mb-6">Formulário ou ligação para solicitar busca/entrega em Curitiba.</p>
+        <form action="#" method="POST" class="max-w-md mx-auto space-y-4">
+          <input type="text" name="nome" placeholder="Seu nome" required class="w-full border rounded px-4 py-2" />
+          <input type="tel" name="telefone" placeholder="Telefone" required class="w-full border rounded px-4 py-2" />
+          <textarea name="mensagem" rows="4" placeholder="Detalhes" class="w-full border rounded px-4 py-2"></textarea>
+          <button type="submit" class="bg-brand-orange text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-white py-10">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-sm">&copy; 2025 TecService. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
